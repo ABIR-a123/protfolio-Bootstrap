@@ -1,0 +1,114 @@
+.bgimg{
+    background-image: url(../images/back1.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 660px;
+    background-color:rgba(0,0,0,0,7);
+    z-index: 1;
+}
+.hearderset {
+    margin-top: 25%;
+    color: white;
+    
+}
+.hearderset h1{
+    font-size: 30px;
+
+}
+.hearderset h2{
+  
+    font-size: 30px;
+    width:50% ;
+    margin-left:22% ;
+    
+    
+   
+}
+
+/* our Services */
+.ourservice{
+    padding-top: 10%;
+}
+.ourservice p{
+    font-weight: bold;
+}
+
+.rowsetting{
+   padding-top: 6%;
+}
+.icon2{
+    font-size: 40px;
+    color:white;
+    background-color: #104fb5;
+    border-radius:50%;
+    width:100px ;
+    height:100px;
+    
+}
+.fa-cart-shopping{
+    margin-top: 30px;
+}
+.fa-desktop{
+    margin-top: 30px;
+}
+.fa-connectdevelop{
+    margin-top: 30px;
+}
+.rowsetting p{
+    padding-top: 10%;
+}
+
+.rowsetting h4{
+    font-weight: bold;
+   
+}
+
+/* services end */
+
+/* protfolio start */
+
+
+
+.protfolio{
+  
+    
+    
+  
+    padding: 100px 0px 5px;
+}
+.protfolio p{
+    font-weight: bold;
+}
+
+/* team start */
+.ourteam{
+    
+    padding-top: 10%;
+}
+
+.teamsetting  img{
+    height: 180px;
+    width: 190px;
+    border-radius: 50%;
+   
+  
+
+}
+
+.edit{
+    padding-top: 8%;
+    
+}
+
+footer{
+    padding-top: 5%;
+    height: 20px;
+
+}
+footer h5{
+line-height: 70px;
+}
+
+
+
