@@ -1,114 +1,259 @@
-.bgimg{
-    background-image: url(../images/back1.jpg);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    width: 100%;
-    height: 660px;
-    background-color:rgba(0,0,0,0,7);
-    z-index: 1;
-}
-.hearderset {
-    margin-top: 25%;
-    color: white;
-    
-}
-.hearderset h1{
-    font-size: 30px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 
-}
-.hearderset h2{
-  
-    font-size: 30px;
-    width:50% ;
-    margin-left:22% ;
-    
-    
-   
+:root {
+  --main-color: #18daf0;
 }
 
-/* our Services */
-.ourservice{
-    padding-top: 10%;
-}
-.ourservice p{
-    font-weight: bold;
-}
-
-.rowsetting{
-   padding-top: 6%;
-}
-.icon2{
-    font-size: 40px;
-    color:white;
-    background-color: #104fb5;
-    border-radius:50%;
-    width:100px ;
-    height:100px;
-    
-}
-.fa-cart-shopping{
-    margin-top: 30px;
-}
-.fa-desktop{
-    margin-top: 30px;
-}
-.fa-connectdevelop{
-    margin-top: 30px;
-}
-.rowsetting p{
-    padding-top: 10%;
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  line-height: 1.5;
 }
 
-.rowsetting h4{
-    font-weight: bold;
-   
+html {
+  font-size: 70%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-/* services end */
-
-/* protfolio start */
-
-
-
-.protfolio{
-  
-    
-    
-  
-    padding: 100px 0px 5px;
+body {
+  background: #fcf2e8;
+  padding-left: 30rem;
 }
-.protfolio p{
-    font-weight: bold;
+section {
+  padding: 1rem 5%;
+  min-height: 100vh;
 }
 
-/* team start */
-.ourteam{
-    
-    padding-top: 10%;
+.heading {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  color: #111;
+  text-transform: uppercase;
 }
 
-.teamsetting  img{
-    height: 180px;
-    width: 190px;
-    border-radius: 50%;
-   
-  
-
+.heading span {
+  color: var(--main-color);
+  text-transform: uppercase;
 }
 
-.edit{
-    padding-top: 8%;
-    
+header {
+  width: 30rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column;
+  z-index: 1000;
+
+  text-align: center;
 }
 
-footer{
-    padding-top: 5%;
-    height: 20px;
-
+header .logo {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 40px;
+  text-decoration: none;
+  font-weight: bold;
 }
-footer h6{
-line-height: 70px;
+
+header .logo span {
+  color: #00ffff;
+}
+header .navbar a {
+  display: block;
+  font-size: 2rem;
+  color: #00ffff;
+  margin: 1rem;
+  font-weight: 500;
 }
 
+header .navbar a:hover {
+  color: #fff;
+}
+header .follow a {
+  font-size: 12px;
+  margin: 1rem;
+  color: #00ffff;
+  margin-bottom: 10rem;
+}
+header .follow a:hover {
+  color: #fff;
+}
+/* .menu {
+  top: 1rem;
+  position: fixed;
+  background: #00ffff;
+  font-size: 3rem;
+  right: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  z-index: 1000;
+  cursor: pointer;
+  display: none;
+}  */
 
+.home1 .home-body {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+}
 
+.home-body .left {
+  margin-left: 5rem;
+}
+.left h1 {
+  color: #00ffff;
+  font-size: 30px;
+}
+.left h2 {
+  font-size: 35px;
+}
+.left span {
+  color: #00ffff;
+}
+.left h4 {
+  font-size: 20px;
+  margin-top: 2px;
+}
+.left p {
+  width: 70%;
+  font-size: 10px;
+  margin-top: 3px;
+}
+.left .btn {
+  background: #00ffff;
+  font-size: 20px;
+  padding: 1px 15px;
+  margin-top: 5px;
+  border-radius: 6px;
+  transition: 1s;
+}
+.left .btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+.right img {
+  height: 70%;
+  width: 90%;
+  border-radius: 50%;
+}
+
+/* About part start */
+.about-body {
+  display: flex;
+}
+
+.about {
+  margin-left: 3rem;
+}
+
+.left img {
+  width: 50%;
+
+  width: 35vh;
+  object-fit: cover;
+  border: 0.8rem solid #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem;
+}
+
+.right {
+  margin-left: 20px;
+}
+.right h1 {
+  width: 80%;
+  font-size: 25px;
+}
+.right p {
+  font-size: 14px;
+  width: 80%;
+}
+.info h2 {
+  color: #18daf0;
+  margin-top: 5px;
+}
+.info span {
+  color: #222;
+}
+.info {
+  display: flex;
+}
+.info-right {
+  margin-left: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  margin-top: 40px;
+}
+.right .btn {
+  background: #66ffff;
+  font-size: 20px;
+  padding: 1px 15px;
+  margin-top: 30px;
+
+  margin-left: 5px;
+  border-radius: 4px;
+  transition: 1s;
+}
+.right .btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* about page end */
+
+/* Hobbies page start */
+.hobby {
+  margin-left: 2rem;
+}
+
+.hobby p {
+  font-size: 14px;
+  width: 90%;
+}
+
+.hobbi_img {
+  display: flex;
+}
+.hobbi_img img {
+  width: 50%;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.hobbi_img p {
+  margin-left: 5px;
+}
+.top-movie {
+  margin-top: 50px;
+}
+.top-movie ol li {
+  margin-left: 25px;
+  font-size: 20px;
+}
+.modification {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+
+  height: 10px;
+  color: #00ffff;
+}
